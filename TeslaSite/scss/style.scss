@@ -1,0 +1,7 @@
+@import 'functions';
+
+h1
+{
+	@include font_fn(red, $brand_font, $normal_font_size + 8px, 20px, 5px);
+}
+
