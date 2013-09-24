@@ -1,0 +1,43 @@
+Scott Clousing
+
+Digital Reason
+=================================
+
+Steve Browning 
+
+Jerry Bunzig
+
+Yasha Swisher
+
+Scala, Go, and Rust 
+
+
+DAN PETE
+
+-Knowledge Work
+=====================
+1.Autonomy 
+2.Mastery
+3.Purpose
+
+The 3 Realms Of Programmers
+===============================
+1.Innovator
+2.Implementer
+3.Integrator 
+
+It takes 10 years to become an expert in anything
+
+
+
+Stuckness
+===============================
+1.Google
+2.StackOverflow
+3.Ask other people
+4.Verbalize a problem 
+
+
+Behavior Driven Development
+----------------------------------
+Designed with user in mind 

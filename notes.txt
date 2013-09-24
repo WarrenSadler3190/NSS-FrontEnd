@@ -1,0 +1,71 @@
+Primitive Types
+=======================
+numbers
+	-intergers -floats 
+strings
+
+boolean 
+
+Special Types
+=======================
+null 
+	-nothing, or variable that equals nothing
+undefined 
+	-variable with specified variable 
+
+Object Types
+=======================
+objects 
+	-
+arrays
+functions
+
+Defining Variables 
+=======================
+var a =3, b = 'hello', c; 
+
+Falsy Values
+=======================
+The following values are always falsy:
+false
+0 (zero)
+''(empty string)
+null 
+undefined
+NaN (a special Number value meaning Not-a-Number!)
+
+Boolean Operators
+=======================
+&& and ||
+("A" == 'a') || (7 < 3)
+(3 <= 2) && (9 != 7)
+
+Assignment Operators
+=======================
+var s = p || 3
+	-null coallesing operator 
+		*/ if 'p' is false put 3 in variable s 
+a += 3
+a -= 3
+a *= 3
+a /= 3
+
+Branching
+=======================
+if(condition1)
+	{	
+	code to be executed if condition1 is true
+	}
+else if (condition2)
+	{
+	code to be executed if condition2 is true
+	}
+else
+	{
+	code to be executed if neither condition1 nor condition2 is true
+	}
+
+	test ? expression1 : expresion2
+	{
+	
+	}

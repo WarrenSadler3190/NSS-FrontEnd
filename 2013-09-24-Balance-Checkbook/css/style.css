@@ -1,0 +1,12 @@
+section
+{
+	width: 960px;
+}
+
+div#panel
+{
+	margin: 20px auto;
+	width: 400px;
+	line-height: 30px;
+	font-size: 20px;
+}
