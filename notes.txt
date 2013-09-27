@@ -69,3 +69,20 @@ else
 	{
 	
 	}
+
+Objects 
+=========================
+Creating a blank Object
+-------------------------------
+var cat = {};
+
+Objects are used to model the real world
+
+How to assign properties to a cat
+--------------------------
+	cat.name = 'kitty'
+	cat.age = 3
+	cat.color = 'black'
+	cat.is_feral = true; 
+	cat.has_owner = false;
+

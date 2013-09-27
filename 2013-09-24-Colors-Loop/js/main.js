@@ -27,13 +27,12 @@ function init()
 	for(var loop = colors.length - 1; loop >= 0; loop--)
 	{
 		console.log('You typed in color: ' + colors[loop]);
-		colors_total += colors[loop].length;
+		colors_total += colors[color].length;
 
 		console.log(colors_total);
 	}
 
-	var avg = colors_total / colors.length;
-	console.log(avg);
+	var avg = colors_total
 }
 
 document.addEventListener("DOMContentLoaded",init,false);
