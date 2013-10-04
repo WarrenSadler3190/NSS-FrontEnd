@@ -1,0 +1,22 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title Fake Photoshop
+    %link{rel: 'stylesheet', href: 'css/normalize.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+  %body
+    #wrapper
+      %h1 PhotoShop Lite
+      %input#color{type:'text', placeholder:'Enter Color(RGB, HEX, or Color Name)' , autofocus:true}
+      %input#addcolor.button{type:'button', value:'Submit Color'}
+      #brush.box
+      .clear
+      #colors
+      %input#amount{type: 'text', placeholder: '3'}
+      %input#add_box.button{type:"button", value: "Add Boxes!"}
+      #canvas
+
+    %script{src: 'js/jquery-1.10.2.min.js'}
+    %script{src: 'js/underscore-min.js'}
+    %script{src: 'js/main.js'}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Geek Bank</title>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h1>The Geek Bank</h1>
+      <img class='logo'>
+      <div id='img_field'>
+        <input id='image_src' placeholder='Enter An Image URL' type='text'>
+        <input class='button' id='image_button' type='button' value='Set Logo'>
+      </div>
+      <div id='balance'>
+        $
+        <span class='balance_amount'></span>
+      </div>
+      <div id='balance_input'>
+        <input id='balance_text' placeholder='Enter a balance' type='text'>
+        <input class='button' id='balance_button' type='button' value='Set Balance'>
+      </div>
+      <div id='deposit_withdraw'>
+        <input id='deposit_withdraw_input' placeholder='Enter a withdraw/deposit amount' type='text'>
+        <div class='clear'></div>
+        <div id='button_field'>
+          <input class='button deposit_button' id='deposit' type='button' value='Deposit'>
+          <input class='button withdraw_button' id='withdraw' type='button' value='Withdraw'>
+        </div>
+      </div>
+      <div id='bank_history'>
+        <ul id='deposit_history'>Deposit History</ul>
+        <ul id='withdraw_history'>Withdraw History</ul>
+      </div>
+    </div>
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src='js/underscore-min.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
