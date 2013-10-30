@@ -1,0 +1,18 @@
+.row
+  .small-12.columns
+    %h1 Flickr App
+.row
+  .small-2.columns 
+    %input#query{type:'text',autofocus:true}
+  .small-10.columns
+    %input#search.button{type:'button',value:'Search'}
+    %input#delete.button{type:'button',value:'Delete'}
+    %input#clear.button{type:'button',value:'Clear'}
+    %input#save.button{type:'button',value:'Save'}
+.row
+  .small-8.columns
+    %h2 Results
+    #results
+  .small-4.columns
+    %h2 Saved
+    #saved

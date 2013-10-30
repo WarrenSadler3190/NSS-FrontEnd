@@ -1,0 +1,31 @@
+.row 
+	.small-12.columns
+		%h1 Shopping App
+.row
+	.small-4.columns
+		%input#domestic{type:'radio',name:'address',value:'domestic'}Domestic
+		%input#international{type:'radio',name:'address',value:'international'}International
+.row
+	.small-4.columns
+		%input#product-image{type:'text',placeholder:'Enter Image',autofocus:'true'}
+		%input#product-name{type:'text',placeholder:'Enter Product Name'}
+	.small-4.columns
+		%input#product-price{type:'text',placeholder:'Price'}
+		%input#product-off{type:'text',placeholder:'Percent Off'}
+	.small-4.columns
+		%input#product-weight{type:'text',placeholder:'Weight'}
+		%input.button#add-product{type:'button',value:'Add Product'}
+.row
+	.small-12.columns
+		%h2 Products Table
+	.small-12.columns
+		%table
+			%thead
+				%tr
+					%th Img
+					%th Name
+					%th Weight			
+					%th Price
+					%th Off
+					%th Sale
+			%tbody#products

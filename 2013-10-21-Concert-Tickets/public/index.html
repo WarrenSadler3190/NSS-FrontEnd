@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Master Template</title>
+  <link href='/css/normalize.css' rel='stylesheet'>
+  <link href='/css/foundation.css' rel='stylesheet'>
+  <link href='/css/app.css' rel='stylesheet'>
+  <script src='/js/vendor/custom.modernizr.js'></script>
+  <script src='/js/app/keys.js'></script>
+</head>
+<body>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h1>Concert App</h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <div id='stage'>STAGE</div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <div id='vipSection'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <div id='gaSection'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-3 columns'>
+      <select id='selectSection'>
+        <option>General Admission</option>
+        <option>VIP</option>
+      </select>
+    </div>
+    <div class='small-3 columns'>
+      <input id='numOfSeats' type='text'>
+    </div>
+    <div class='small-3 columns'>
+      <input id='costPerSeat' type='text'>
+    </div>
+    <div class='small-3 columns'>
+      <input class='button' id='createSeats' type='button' value='Create Seats'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-4 columns'>
+      <table>
+        <thead>
+          <tr>
+            <th>Total VIP</th>
+            <th>Total GA</th>
+            <th>Grand Total</th>
+            <th>VIP People</th>
+            <th>GA People</th>
+            <th>Total People</th>
+          </tr>
+        </thead>
+        <tbody id='reportingBody'></tbody>
+      </table>
+    </div>
+    <div class='small-4 columns'>
+      <div id='vipRows'></div>
+    </div>
+    <div class='small-4 columns'>
+      <table>
+        <thead>Seat List</thead>
+        <tbody id='seatList'></tbody>
+      </table>
+    </div>
+  </div>
+  <!-- #map-canvas -->
+  <script src='/js/vendor/jquery-1.10.2.js'></script>
+  <script src='/js/vendor/foundation.min.js'></script>
+  <script src='/js/vendor/underscore.js'></script>
+  <script src='/js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <!-- %script{src: 'https://maps.googleapis.com/maps/api/js?key=__________&sensor=true'} -->
+  <script src='/js/app/app.js'></script>
+</body>

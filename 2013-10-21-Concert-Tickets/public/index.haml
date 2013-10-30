@@ -1,0 +1,51 @@
+!!! 5
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+%head
+  = Haml::Engine.new(File.read('public/haml/_head.haml')).render
+  %script{src: '/js/app/keys.js'}
+%body
+  .row
+    .small-12.columns
+      %h1 Concert App
+  .row
+    .small-12.columns
+      #stage STAGE
+  .row
+    .small-12.columns
+      #vipSection
+  .row
+    .small-12.columns
+      #gaSection
+  .row
+    .small-3.columns
+      %select#selectSection
+        %option General Admission
+        %option VIP
+    .small-3.columns
+      %input#numOfSeats{type:'text'}
+    .small-3.columns
+      %input#costPerSeat{type:'text'}
+    .small-3.columns
+      %input.button#createSeats{type:'button', value:'Create Seats'}
+  .row
+    .small-4.columns
+      %table
+        %thead 
+          %tr
+            %th Total VIP
+            %th Total GA
+            %th Grand Total
+            %th VIP People
+            %th GA People
+            %th Total People
+        %tbody#reportingBody
+
+    .small-4.columns
+      #vipRows
+    .small-4.columns
+      %table
+        %thead Seat List
+        %tbody#seatList
+  = Haml::Engine.new(File.read('public/haml/_body.haml')).render
+  = Haml::Engine.new(File.read('public/haml/_scripts.haml')).render
