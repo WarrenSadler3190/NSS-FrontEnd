@@ -1,0 +1,22 @@
+.contain-to-grid.sticky
+	nav.top-bar
+		ul.title-area
+			li.name
+				h1: a.
+					MixMaster
+			li.toggle-topbar.menu-icon: a(href="/")
+				span Nav
+		section.top-bar-section
+			ul.left
+				li.divider
+				li.active.has-dropdown: a(href="/songs") Songs
+					ul.dropdown
+						li: label Add New Music
+						li.active: a(href="/songs/new").
+							New Song
+				//- li.active.has-dropdown: a(href="#") Edit Music
+				//- 	ul.dropdown
+				//- 		li: label Dropdown Level
+				//- 		li: a(href='#') New
+				//- 		li: a(href='#') Delete
+

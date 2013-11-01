@@ -1,0 +1,27 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+//- title: String,
+//- 	duration: Number,
+//- 	genres: [String],
+//- 	art: String,
+//- 	filename: String, 
+//- 	lyrics: String,
+//- 	createdAt: {type: Date, default: Date.now}
+
+block content
+	.row
+		.small-12.columns
+			#songs
+					each song in songs
+						.song
+							img(src=song.art)
+							a(href='/songs/#song._id'): h3.subheader= song.title
+							audio(src='/audio/#{song.filename}',controls=true)
+							hr
+							p= song.duration
+							p= song.lyrics
+							ul
+								each genre in song.genres
+									li= genre
+

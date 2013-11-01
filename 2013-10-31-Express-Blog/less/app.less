@@ -1,0 +1,66 @@
+@base: #474747;
+@inputColor: #2B383D;
+@white: #FFF;
+
+
+body{
+  background-color: @base ;
+  color: @white;
+}
+
+h1{
+  color:@white;
+}
+
+input[type='text']{
+	background-color: @inputColor;
+	color:white;
+	border:0;
+	&:focus{
+		background-color: @inputColor;
+
+	}
+}
+
+#content{
+	background-color: @inputColor;
+	height: 225px;
+	color:white;
+	border:0;
+	&:focus{
+		background-color: @inputColor;
+
+	}
+}
+
+.subheader{
+	color:@white;
+}
+
+fieldset{
+	border:1px solid @inputColor;
+	background-color: white;
+}
+
+legend{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.post{
+	background-color: @inputColor;
+	margin-top: 10px;
+	&:nth-child(1){
+		margin-top:0px;
+	}
+
+	padding: 5px;
+	h3{
+		font-size: 40px;
+	}
+	.authorName{
+		text-decoration: underline;
+	}
+	span{
+		margin-left: 4px;
+	}
+}

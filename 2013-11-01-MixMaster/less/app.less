@@ -1,0 +1,67 @@
+@base: #405C66;
+
+body{
+  background-color: white;
+  color:@base;
+  background-image: url('http://www.indiwall.com/big-wallpaper/1920x1080/hd-wallpapers-music-equipment-wallpaper-1920x1080-wallpaper.jpg');
+}
+
+.contain-to-grid{
+	box-shadow: 0px 3px 3px black;
+}
+
+#newSong{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding:15px;
+	box-shadow: 0px 3px 5px #222; 
+	margin-top: 30px;
+
+	h3{
+		color:black;
+	}
+}
+
+label{
+	color:black;
+}
+#songs{
+	margin:20px;
+}
+.song{
+	text-align: center;
+	width:280px;
+	height: 600px;
+	float:left;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0px 3px 4px #444;
+
+	img{
+		width: 120px;
+		border: 10px solid white;
+		overflow: hidden;
+		border-radius: 100px;
+		margin: 10px 75px;
+		box-shadow: 0px 3px 3px #444;
+	}
+	audio{
+		width: 160px;
+		background-color: #33DCE0;
+	}
+	ul{
+		margin: 0px 0px 0px 20px;
+		list-style: none;
+
+			li{
+				// display: inline;
+				float: left;
+				margin-right:4px; 
+				background-color: @base;
+				color:white;
+				text-decoration: underline;
+				border-radius: 2px;
+			}
+	}
+}
+
