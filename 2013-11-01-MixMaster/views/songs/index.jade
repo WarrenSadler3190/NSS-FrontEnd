@@ -2,26 +2,30 @@ extends ../template/layout
 include ../mixins/form-helper.jade
 
 //- title: String,
-//- 	duration: Number,
-//- 	genres: [String],
-//- 	art: String,
-//- 	filename: String, 
-//- 	lyrics: String,
-//- 	createdAt: {type: Date, default: Date.now}
+//-   duration: Number,
+//-   genres: [String],
+//-   art: String,
+//-   filename: String, 
+//-   lyrics: String,
+//-   createdAt: {type: Date, default: Date.now}
 
 block content
-	.row
-		.small-12.columns
-			#songs
-					each song in songs
-						.song
-							img(src=song.art)
-							a(href='/songs/#song._id'): h3.subheader= song.title
-							audio(src='/audio/#{song.filename}',controls=true)
-							hr
-							p= song.duration
-							p= song.lyrics
-							ul
-								each genre in song.genres
-									li= genre
+  .row
+    .small-12.columns
+      #songs
+        each song in songs
+          .song
+            a(href='/songs/#{song._id}'): img(src=song.art)
+            h3.subheader= song.title
+            audio(src='/audio/#{song.filename}',controls=true)
+            hr
+            p= song.duration
+            p= song.lyrics
+            ul
+              each genre in song.genres
+                li= genre
+            .row
+              form(action='/posts/#{post._id}', method='post')
+                input(type='hidden', name='_method', value='delete')
+                button.button.tiny.radius.alert(type='submit') Delete
 

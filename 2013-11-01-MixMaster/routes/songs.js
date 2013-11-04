@@ -31,6 +31,27 @@ exports.create = function(req, res){
 	new Song(req.body).save(function(err, song, count){
 			console.log('After');
 			console.log(song);
-		res.redirect('/songs');
+  res.render('songs/show.jade', {title: 'View Your Song' , song: song} );
+		// res.redirect('/songs/#{song._id}');
+	});
+};
+
+/*
+ * GET /posts/:id
+ */
+
+exports.show = function(req, res){
+	Song.findById(req.params.id, function(err, song){
+  res.render('songs/show.jade', {title: 'View Your Song' , song: song} );
+	});
+};
+
+/*
+ * DELETE /posts/:id
+ */
+
+exports.delete = function(req, res){
+	Song.findByIdAndRemove(req.params.id, function(err, song){
+  res.redirect('/songs');
 	});
 };

@@ -2,7 +2,7 @@
 	nav.top-bar
 		ul.title-area
 			li.name
-				h1: a.
+				h1: a(href='/').
 					MixMaster
 			li.toggle-topbar.menu-icon: a(href="/")
 				span Nav
@@ -14,6 +14,13 @@
 						li: label Add New Music
 						li.active: a(href="/songs/new").
 							New Song
+			ul.left
+				li.divider
+				li.active.has-dropdown: a(href="/artist") Artist
+					ul.dropdown
+						li: label Add New Artist
+						li.active: a(href="/artists/new").
+							New Artist
 				//- li.active.has-dropdown: a(href="#") Edit Music
 				//- 	ul.dropdown
 				//- 		li: label Dropdown Level
