@@ -28,10 +28,12 @@ exports.new = function(req, res){
  */
 
 exports.create = function(req, res){
-  req.body.genres = req.body.genres.split(', ');
   new Song(req.body).save(function(err, song, count){
-    res.redirect('/songs');
-    console.log(req.body);
+    if(err){
+      res.render('songs/new', {title: 'Express', errors: err.errors, song: new Song()});
+    } else {
+      res.redirect('/songs');
+    }
   });
 };
 
